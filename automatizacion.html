@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Automatización de Procesos - Tech-Services</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <h1 class="logo-title">TECH-SERVICES</h1>
+  </header>
+
+  <!-- BOTONES SUPERIORES -->
+  <div class="soft-top-actions">
+    <a class="nav-card" href="index.html">INICIO</a>
+    <a class="nav-card" href="login.html">LOGIN</a>
+  </div>
+
+  <!-- DESCRIPCIÓN -->
+  <section class="container soft-intro">
+    <div class="descripcion text-center">
+      <p>
+        Implementamos soluciones de Automatización Robótica de Procesos (RPA) utilizando Automation Anywhere, 
+        la plataforma líder en el mercado. Automatizamos tus tareas repetitivas y procesos operativos para aumentar 
+        la eficiencia, reducir errores y liberar a tu equipo para actividades de mayor valor.
+      </p>
+    </div>
+  </section>
+
+  <!-- AUTOMATIZACIÓN -->
+  <main class="soft-grid">
+    <!-- TIPOS -->
+    <section class="soft-card">
+      <h3 class="soft-heading">Procesos automatizables:</h3>
+      <ul class="soft-list">
+        <li>Procesamiento de facturas y documentos</li>
+        <li>Extracción y migración de datos</li>
+        <li>Reportes y dashboards automáticos</li>
+        <li>Integración entre sistemas legacy</li>
+        <li>Atención al cliente automatizada</li>
+        <li>Gestión de inventarios y logística</li>
+      </ul>
+    </section>
+
+    <!-- IMAGEN -->
+    <section class="soft-img-wrap">
+      <img src="assets/images/RPA5.png" alt="Automatización de Procesos" class="soft-img soft-img--sm">
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="soft-card">
+      <h3 class="soft-heading">Beneficios:</h3>
+      <ul class="soft-list">
+        <li><strong>Ahorro de tiempo:</strong> Reduce procesos de horas a minutos</li>
+        <li><strong>Reducción de costos:</strong> Disminuye errores y rework</li>
+        <li><strong>Mayor precisión:</strong> Elimina errores humanos</li>
+        <li><strong>Escalabilidad:</strong> Procesa grandes volúmenes de datos</li>
+        <li><strong>Libera talento humano:</strong> Enfoca a tu equipo en tareas estratégicas</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="metodologia">
+    <h3 class="soft-heading">Nuestro enfoque con Automation Anywhere:</h3>
+    <ul class="soft-steps">
+      <li>Desarrollo de bots personalizados</li>
+      <li>Implementación de A360 (Automation 360)</li>
+      <li>Análisis de procesos automatizables</li>
+      <li>Mantenimiento y optimización continua</li>
+      <li>Capacitación y transferencia de conocimiento</li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
+  <div class="contact-widget" onclick="openContact()">
+    <div class="bubble"><img src="assets/images/contactanos.png" alt="Contáctanos"></div>
+  </div>
+
+  <!-- COTIZACIÓN -->
+  <div class="quote-bar">
+    <input id="quoteInput" type="text" placeholder="¿Quieres cotizar los servicios o agendar una consultoría gratis?">
+    <button onclick="sendQuote()">Enviar</button>
+  </div>
+
+  <script>
+    function openContact(){ alert('Abrir contacto (ej: WhatsApp)'); }
+    function sendQuote(){
+      const v = document.getElementById('quoteInput').value.trim();
+      if(!v){ alert('Escribe tu mensaje por favor.'); return; }
+      alert('Gracias — recibimos tu solicitud:\n' + v);
+      document.getElementById('quoteInput').value='';
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

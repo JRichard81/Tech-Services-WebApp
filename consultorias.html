@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consultorías - Tech-Services</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <h1 class="logo-title">TECH-SERVICES</h1>
+  </header>
+
+  <!-- BOTONES SUPERIORES -->
+  <div class="soft-top-actions">
+    <a class="nav-card" href="index.html">INICIO</a>
+    <a class="nav-card" href="login.html">LOGIN</a>
+  </div>
+
+  <!-- DESCRIPCIÓN -->
+<section class="container soft-intro">
+  <div class="descripcion text-center">
+    <p>
+      Ofrecemos asesoría especializada para guiar la transformación digital de tu organización. 
+      Nuestros consultores analizan tus procesos, identifican oportunidades tecnológicas y diseñan 
+      estrategias personalizadas para maximizar tu eficiencia y competitividad.
+    </p>
+  </div>
+</section>
+
+  <!-- CONSULTORÍAS -->
+  <main class="soft-grid">
+    <!-- TIPOS -->
+    <section class="soft-card">
+      <h3 class="soft-heading">Tipos de consultoría:</h3>
+      <ul class="soft-list">
+        <li><strong>Transformación Digital:</strong> Estrategias para modernizar tu negocio.</li>
+        <li><strong>Auditoría TI:</strong> Evaluación de infraestructura y seguridad.</li>
+        <li><strong>Optimización de Procesos:</strong> Automatización y eficiencia operativa.</li>
+        <li><strong>Ciberseguridad:</strong> Protección de datos y sistemas.</li>
+      </ul>
+    </section>
+
+    <!-- IMAGEN -->
+    <section class="soft-img-wrap">
+      <img src="assets/images/ingeniaconsultoria-software-img-intro.png" alt="Consultorías" class="soft-img soft-img--sm">
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="soft-card">
+      <h3 class="soft-heading">Beneficios:</h3>
+      <ul class="soft-list">
+        <li><strong>Maximiza:</strong> Tecnología que agrega valor real.</li>
+        <li><strong>Reduce tiempos:</strong> Optimización de procesos operativos.</li>
+        <li><strong>Mitiga riesgos:</strong> Identificación de vulnerabilidades.</li>
+        <li><strong>Enfoque personalizado:</strong> Soluciones hechas a la medida.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- METODOLOGÍA -->
+ <section class="metodologia">
+  <h3 class="soft-heading">Metodología:</h3>
+  <ol class="soft-steps">
+    <li><strong>Diagnóstico:</strong> Análisis detallado de necesidades.</li>
+    <li><strong>Planificación:</strong> Diseño de la hoja de ruta.</li>
+    <li><strong>Implementación:</strong> Acompañamiento en la ejecución.</li>
+    <li><strong>Seguimiento:</strong> Evaluación continua y ajustes.</li>
+  </ol>
+</section>
+
+
+  <!-- CONTACTO -->
+  <div class="contact-widget" onclick="openContact()">
+    <div class="bubble"><img src="assets/images/contactanos.png" alt="Contáctanos"></div>
+  </div>
+
+  <!-- COTIZACIÓN -->
+  <div class="quote-bar">
+    <input id="quoteInput" type="text" placeholder="¿Quieres cotizar los servicios o agendar una consultoría gratis?">
+    <button onclick="sendQuote()">Enviar</button>
+  </div>
+
+  <script>
+    function openContact(){ alert('Abrir contacto (ej: WhatsApp)'); }
+    function sendQuote(){
+      const v = document.getElementById('quoteInput').value.trim();
+      if(!v){ alert('Escribe tu mensaje por favor.'); return; }
+      alert('Gracias — recibimos tu solicitud:\n' + v);
+      document.getElementById('quoteInput').value='';
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

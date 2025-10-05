@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Misión y Visión - Tech-Services</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <h1 class="logo-title">TECH-SERVICES</h1>
+  </header>
+
+  <!--  NAV -->
+  <nav class="nav-row" role="navigation" aria-label="main navigation">
+  <a class="nav-card" href="index.html">INICIO</a>
+  <a class="nav-card" href="mision-vision.html">MISIÓN Y VISIÓN</a>
+  <a class="nav-card" href="servicios.html">SERVICIOS</a> 
+  <a class="nav-card" href="login.html">LOGIN</a>
+</nav>
+
+  <main class="main-wrapper">
+
+   
+    <div class="container mv-wrap">
+      <div class="row align-items-center g-3">
+        <div class="col-auto">
+          <img src="assets/images/mision-1-1.png" alt="Misión" class="mv-art">
+        </div>
+        <div class="col-12 col-md-6 mx-md-auto">
+          <p class="lead-text text-center m-0">
+            Acompañar a las organizaciones en su proceso de transformación digital mediante
+            soluciones tecnológicas estratégicas, asegurando competitividad, seguridad y
+            adaptabilidad en mercados disruptivos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mv-spacer"></div>
+
+    <div class="container mv-wrap">
+      <div class="row align-items-center g-3">
+        <div class="col-auto">
+          <img src="assets/images/vision-2-1.png" alt="Visión" class="mv-art">
+        </div>
+        <div class="col-12 col-md-6 ms-md-auto">
+          <p class="lead-text text-end m-0">
+            Ser referentes en la creación de productos digitales que definan los estándares
+            de usabilidad, innovación e impacto social en la industria de tecnología nacional
+            y expandir el producto a nivel internacional.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <div class="contact-widget" onclick="openContact()">
+    <div class="bubble"><img src="assets/images/contactanos.png" alt="Contáctanos"></div>
+    <div class="label"></div>
+  </div>
+
+  <div class="quote-bar">
+    <input id="quoteInput" type="text" placeholder="¿Quieres cotizar los servicios o agendar una consultoría gratis?">
+    <button onclick="sendQuote()">Enviar</button>
+  </div>
+  <script>
+    function openContact(){ alert('Abrir contacto (ej: WhatsApp)'); }
+    function sendQuote(){
+      const v = document.getElementById('quoteInput').value.trim();
+      if(!v){ alert('Escribe tu mensaje por favor.'); return; }
+      alert('Gracias — recibimos tu solicitud:\n' + v);
+      document.getElementById('quoteInput').value='';
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
