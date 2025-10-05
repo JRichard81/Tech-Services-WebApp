@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const API = 'http://localhost:3000';
+  const API = 'https://tech-services-api.onrender.com';
   const ENDPOINTS = {
     productos: `${API}/productos`,
     usuarios: `${API}/usuarios`,
