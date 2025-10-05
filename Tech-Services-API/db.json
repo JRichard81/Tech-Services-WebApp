@@ -1,0 +1,85 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "ADMINISTRATOR",
+      "correo": "admin@techservices.com",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "nombre": "Mylli Becerra",
+      "correo": "Mylli@techservices.com",
+      "rol": "usuario"
+    },
+    {
+      "id": "3",
+      "nombre": "John Merchán",
+      "correo": "john@techservices.com",
+      "rol": "usuario"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Software Contable",
+      "precio": 2500000,
+      "categoria": "Software",
+      "activos": 2
+    },
+    {
+      "id": "2",
+      "nombre": "Consultoría IT",
+      "precio": 1200000,
+      "categoria": "Servicios"
+    },
+    {
+      "id": "3",
+      "nombre": "Automatización RPA",
+      "precio": 3500000,
+      "categoria": "Automatización"
+    },
+    {
+      "id": "4",
+      "nombre": "Desarrollo de Aplicaciones Web",
+      "precio": 4800000,
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": "5",
+      "nombre": "Auditoría de Sistemas",
+      "precio": 1700000,
+      "categoria": "Consultoría"
+    },
+    {
+      "id": "6",
+      "nombre": "Optimización de Procesos",
+      "precio": 2100000,
+      "categoria": "Consultoría"
+    },
+    {
+      "id": "7",
+      "nombre": "Integración de APIs",
+      "precio": 2900000,
+      "categoria": "Software"
+    },
+    {
+      "id": "8",
+      "nombre": "Seguridad Informática",
+      "precio": 3800000,
+      "categoria": "Ciberseguridad"
+    },
+    {
+      "id": "9",
+      "nombre": "Desarrollo Móvil",
+      "precio": 4200000,
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": "10",
+      "nombre": "Transformación Digital",
+      "precio": 5200000,
+      "categoria": "Consultoría"
+    }
+  ]
+}
